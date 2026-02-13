@@ -6,3 +6,66 @@
   font-weight: 500;
   font-style: normal;
 }
+/* shared styles */
+.display-flex {
+  display: flex;
+}
+.text-gray {
+  color: #424242;
+}
+.text-light-grey {
+  color: #727272;
+}
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.btn-primary {
+  background-color: #ff900e;
+  color: white;
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  border-radius: 0.7rem;
+  border: 0;
+}
+/* header styles */
+
+/* navbar related styles */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item {
+  list-style: none;
+  margin-right: 3em;
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  /* color: rgb(55, 54, 54); */
+}
+.navbar,
+.banner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.brand {
+  font-weight: 700;
+  font-size: 3rem;
+}
+/* banner related styles */
+.banner-content {
+  max-width: 870px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.banner-img {
+  width: 100%;
+}
+/* responsive media query */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-link {
+    flex-direction: column;
+  }
+}
